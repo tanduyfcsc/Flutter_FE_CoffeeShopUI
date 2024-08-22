@@ -17,7 +17,7 @@ class WelcomeScreen extends StatelessWidget{
           )
         ),
         child: Column(
-          mainAxisAlignment: MainAxisAlignment.spaceAround,
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
             Text('Coffee Shop', style: GoogleFonts.pacifico(
               fontSize: 50,
