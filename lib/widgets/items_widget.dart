@@ -1,6 +1,7 @@
 import 'package:coffee_shop_ui/screens/single_item_screen.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class ItemsWidget extends StatelessWidget {
   List img = [
@@ -35,7 +36,7 @@ class ItemsWidget extends StatelessWidget {
               children: [
                 InkWell(
                   onTap: () {
-                    Navigator.push(context, MaterialPageRoute(builder: (context)=> SingleItemScreen()));
+                    Navigator.push(context, MaterialPageRoute(builder: (context)=> SingleItemScreen(img[i])));
                   },
                   child: Container(
                     margin: EdgeInsets.all(10),
@@ -56,7 +57,7 @@ class ItemsWidget extends StatelessWidget {
                       children: [
                         Text(
                           img[i],
-                          style: TextStyle(
+                          style: GoogleFonts.aBeeZee(
                               fontSize: 18,
                               fontWeight: FontWeight.bold,
                               color: Colors.white),
@@ -66,7 +67,7 @@ class ItemsWidget extends StatelessWidget {
                         ),
                         Text(
                           "Best Coffee",
-                          style: TextStyle(fontSize: 16, color: Colors.white60),
+                          style: GoogleFonts.aBeeZee(fontSize: 16, color: Colors.white60),
                         ),
                       ],
                     ),

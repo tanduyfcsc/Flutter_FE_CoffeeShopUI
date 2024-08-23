@@ -98,6 +98,7 @@ class _HomeScreenState extends State<HomeScreen> with SingleTickerProviderStateM
               ),
               TabBar(
                 isScrollable: true,
+                tabAlignment: TabAlignment.start,
                 controller: _tabController,
                   dividerColor: Colors.transparent,
                   labelColor: Color(0xFFE57734),
